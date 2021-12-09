@@ -140,6 +140,11 @@ if __name__ == '__main__':
         exit(-1)
 
     # launch bot (blocking operation)
-    bot.run(os.environ['BOT_TOKEN'])
+	import argparse
+	parser = argparse.ArgumentParser()
+	parser.add_argument("--token", help="increase output verbosity")
+	args = parser.parse_args()
+	if args.verbosity:
+		bot.run(os.environ['BOT_TOKEN'])
 
 
