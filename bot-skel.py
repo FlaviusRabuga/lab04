@@ -1,4 +1,4 @@
-
+#COPYRIGHT 2021 Rabuga Andrei-Flavius
     
 
     #!./.venv/bin/python
